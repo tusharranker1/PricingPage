@@ -1,0 +1,343 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-container
+{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Wrap1 inner Html */
+
+#wrap1
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+.box{
+    height: 45%;
+    width: 14%;
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* .box::before{
+    content: "";
+    position: absolute;
+    height: 140%;
+    width: 50%;
+    background: linear-gradient(to bottom,#00ccff,#d400d4);
+    animation-name: shining-border;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes shining-border {
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+} */
+   
+#b1
+{
+    top: 5%;
+    left: 10%;
+}
+
+#b1::before{
+    content: "";
+    position: absolute;
+    height: 140%;
+    width: 50%;
+    background: linear-gradient(to bottom,#ff00ea,#d0d400);
+    animation-name: shining-border;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes shining-border {
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+#b1::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+#b2
+{
+    top: 30%;
+    right: 10%;
+    transform: rotateZ(-40deg);
+}
+#b2::before{
+    content: "";
+    position: absolute;
+    height: 140%;
+    width: 50%;
+    background: linear-gradient(to bottom,#ff0000,#ffee00);
+    animation-name: shining-border;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes shining-border {
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+#b2::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+#b3
+{
+    bottom: 0%;
+    left: 50%;
+    transform: rotateZ(90deg);
+}
+
+#b3::before{
+    content: "";
+    position: absolute;
+    height: 140%;
+    width: 50%;
+    background: linear-gradient(to bottom,#00ccff,#d400d4);
+    animation-name: shining-border;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes shining-border {
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+#b3::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+#b4
+{
+    bottom: 7%;
+    left: 15%;
+    transform:  rotateZ(80deg);
+    border-radius: 10px;
+}
+
+#b4::before{
+    content: "";
+    position: absolute;
+    height: 140%;
+    width: 50%;
+    background: linear-gradient(to bottom,#00ff0d,#d46600);
+    animation-name: shining-border;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes shining-border {
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+#b4::after
+{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    
+}
+#b5
+{
+    top: 10%;
+    right: 5%;
+}
+#b5::before{
+    content: "";
+    position: absolute;
+    height: 140%;
+    width: 50%;
+    background: linear-gradient(to bottom,#1900ff,#5590d3);
+    animation-name: shining-border;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes shining-border {
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+#b5::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+
+
+
+/* Wrap2 and its inner Html */
+#wrap2
+{
+    /* display: none; */
+    height: 50%;
+    width: 60%;
+    /* background-color: white; */
+    z-index: 4;
+    display: flex;
+    perspective: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.division
+{
+    height: 100%;
+    width: 25%;
+    transition: transform 0.8s , width 0.7s;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+
+.division h1{
+    text-align: center;
+    height: 20%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+}
+
+.division p{
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+}
+
+.spanSet{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+}
+.s1{
+    height: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.s2{
+    font-size: 4.5em;
+    display: flex;
+
+}
+.s3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+
+.btn{
+    height:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.btn button{
+    height: 80%;
+    width: 90%;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: 0px solid black;
+}
+.btn button:hover{
+    cursor: pointer;
+}
+#d1:hover{
+    transform: translateZ(100px) translateX(10%);
+    width: 30%;
+}
+#d2:hover{
+    transform: translateZ(100px);
+        width: 30%;
+}
+#d3:hover{
+    transform: translateZ(100px);
+    width: 30%;
+    z-index: 5;
+}
+#d4:hover{
+    transform: translateZ(100px) translateX(-10%);
+    width: 30%;
+}
+
+
+/*============ Extra Classes for animation================ */
